@@ -8,6 +8,22 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <title>Jumbotron Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
@@ -15,6 +31,12 @@
 
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
+
+
+
+
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -57,6 +79,42 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Hello, world!</h1>
+
+   <?php \drmabuse\slick\SlickWidget::widget([
+        'container' => '.single-item',
+        'settings'  => [
+            'slick' => [
+                'infinite'      =>  true,
+                'slidesToShow'  =>  3,
+                'onBeforeChange'=> new \yii\web\JsExpression('function(){
+                }'),
+                'onAfterChange' => new \yii\web\JsExpression('function(){
+                    console.debug(this);
+                }'),
+                'responsive' => [
+                    [
+                        'breakpoint'=> 768,
+                          'settings'=> [
+                              'arrows'=> false,
+                              'centerMode'=> true,
+                              'centerPadding'=> 40,
+                              'slidesToShow'=> 3
+                          ]
+                    ]
+                ],
+            ],
+            'slickGoTo'         => 3,
+        ]
+    ]); ?>
+
+    <div class="slider single-item">
+        <div><h3>1</h3></div>
+        <div><h3>2</h3></div>
+        <div><h3>3</h3></div>
+        <div><h3>4</h3></div>
+        <div><h3>5</h3></div>
+        <div><h3>6</h3></div>
+    </div>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
       </div>
@@ -95,5 +153,21 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="bower_components/bootstrap.css/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
+				
+<script>
+
+$(document).ready(function(){
+	$('.your-class').slick({
+	  setting-name: setting-value
+	});
+});
+
+
+</script>
+
+
   </body>
 </html>
