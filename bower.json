@@ -1,0 +1,20 @@
+{
+  "name": "first-repo",
+  "version": "2",
+  "homepage": "https://github.com/aido14/first-repo",
+  "authors": [
+    "aido"
+  ],
+  "description": "first repository",
+  "main": "index.html",
+  "keywords": [
+    "first"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "slideshow": "~0.0.9",
+    "bootstrap.css": "~2.3.2",
+    "slick-carousel": "~1.3.5"
+      "jquery": ">=1.7"
+  }
+}

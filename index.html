@@ -8,6 +8,8 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
 
 
 
@@ -24,28 +26,16 @@
 
 
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>aidos</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bower_components/bootstrap.css/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
-
-
-
-
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<link href="bower_components/bootstrap.css/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/css/style.css">
   </head>
 
   <body>
@@ -82,27 +72,6 @@
 
 
 		
-<div class="slideshow">
-    <figure class="slide slide-active">
-        <img src="images/image1.jpg" alt="">
-    </div>
-    <figure class="slide">
-        <img src="images/image2.jpg" alt="">
-    </div>
-    <figure class="slide">
-        <img src="images/image3.jpg" alt="">
-    </div>
-    <figure class="slide">
-        <img src="images/image4.jpg" alt="">
-    </div>
-</div>
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		<p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
@@ -132,6 +101,83 @@
 
       <hr>
 
+ <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, world!</h1>
+
+
+		
+		
+		
+		<p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+		<section id="features" class="blue">
+			<div class="content" style="width:100%;">
+				
+				<hr id="demos"/>
+				<h2>Single Item</h2>
+				<div class="slider single-item">
+					<div><h3>1</h3></div>
+					<div><h3>2</h3></div>
+					<div><h3>3</h3></div>
+					<div><h3>4</h3></div>
+					<div><h3>5</h3></div>
+					<div><h3>6</h3></div>
+				</div>
+
+				<hr/>
+				<h2>Responsive Display</h2>
+				<div class="slider responsive">
+					<div><h3>1</h3></div>
+					<div><h3>2</h3></div>
+					<div><h3>3</h3></div>
+					<div><h3>4</h3></div>
+					<div><h3>5</h3></div>
+					<div><h3>6</h3></div>
+					<div><h3>7</h3></div>
+					<div><h3>8</h3></div>
+				</div>
+				
+				
+			
+				<hr/>
+				<h2>Destroy</h2>
+				<p class="destroy">If you really want to be that guy...</p>
+				<pre><code>
+$('.your-slider').unslick();
+				</code></pre>
+				<h4 class="more">and a whole lot more...</h4>
+				</div>
+		</section>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <footer>
         <p>&copy; Company 2014</p>
       </footer>
@@ -146,13 +192,10 @@
 
 				
 <script src="bower_components/modernizr/modernizr.js"></script>
-<script src="bower_components/jquery/jquery.js"></script>
-<script src="bower_components/slideshow/slideshow.js"></script>
-<script>
-$(function () {
-    $('.slideshow').slideshow();
-});
-</script>
+
+		<script type="text/javascript" src="bower_components/slick-carousel/slick/slick.js"></script>
+		<script type="text/javascript" src="bower_components/slick-carousel/js/scripts.js"></script>
+
 
   </body>
 </html>
