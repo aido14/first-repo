@@ -1,0 +1,19 @@
+{
+  "name": "slideshow",
+  "version": "0.0.9",
+  "dependencies": {
+    "jquery": "~1.10",
+    "modernizr": "~2.6.0"
+  },
+  "homepage": "https://github.com/Pephers/Slideshow",
+  "_release": "0.0.9",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.9",
+    "commit": "ea3771e89d8bca8dd75087c8473c71bb8a707213"
+  },
+  "_source": "git://github.com/Pephers/Slideshow.git",
+  "_target": "~0.0.9",
+  "_originalSource": "slideshow",
+  "_direct": true
+}
